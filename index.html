@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0614">
+  <meta name="description" content="Listen to Blueberry Fruitsy on your favorite music platforms.">
+  <title>Blueberry Fruitsy // Stream</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="noise" aria-hidden="true"></canvas>
+  <div class="orb orb-a" aria-hidden="true"></div>
+  <div class="orb orb-b" aria-hidden="true"></div>
+  <div class="grid" aria-hidden="true"></div>
+
+  <main class="shell">
+    <nav class="topbar">
+      <a class="brand" href="https://blueberryfruitsy.com/" aria-label="Blueberry Fruitsy home">
+        <span class="brand-mark">BF</span>
+        <span>BLUEBERRY FRUITSY</span>
+      </a>
+      <span class="status"><i></i> MUSIC ONLINE</span>
+    </nav>
+
+    <section class="hero">
+      <div class="eyebrow">/ STREAM DIRECTORY</div>
+      <h1>Listen to<br><span>Blueberry Fruitsy.</span></h1>
+      <p class="intro">Instrumental electronic music, weird little ideas, and things I decided needed to exist.</p>
+      <a class="primary" href="#platforms"><span>EXPLORE STREAMING</span><b>↓</b></a>
+    </section>
+
+    <section class="platform-section" id="platforms">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">01 / PLATFORMS</span>
+          <h2>Pick your poison.</h2>
+        </div>
+        <span class="count">05 AVAILABLE</span>
+      </div>
+
+      <div class="platforms">
+        <a class="platform" href="https://open.spotify.com/search/Blueberry%20Fruitsy" target="_blank" rel="noopener">
+          <span class="platform-icon spotify">S</span><span><strong>Spotify</strong><small>Stream on Spotify</small></span><b>↗</b>
+        </a>
+        <a class="platform" href="https://music.apple.com/us/artist/blueberry-fruitsy/1846865900" target="_blank" rel="noopener">
+          <span class="platform-icon apple">●</span><span><strong>Apple Music</strong><small>Listen on Apple Music</small></span><b>↗</b>
+        </a>
+        <a class="platform" href="https://music.youtube.com/search?q=Blueberry%20Fruitsy" target="_blank" rel="noopener">
+          <span class="platform-icon youtube">▶</span><span><strong>YouTube Music</strong><small>Play on YouTube Music</small></span><b>↗</b>
+        </a>
+        <a class="platform" href="https://tidal.com/search?q=Blueberry%20Fruitsy" target="_blank" rel="noopener">
+          <span class="platform-icon tidal">T</span><span><strong>TIDAL</strong><small>Listen on TIDAL</small></span><b>↗</b>
+        </a>
+        <a class="platform" href="https://music.amazon.com/artists/B0D1P78PCZ/blueberry-fruitsy" target="_blank" rel="noopener">
+          <span class="platform-icon amazon">a</span><span><strong>Amazon Music</strong><small>Listen on Amazon Music</small></span><b>↗</b>
+        </a>
+      </div>
+    </section>
+
+    <section class="lower">
+      <div class="now-card">
+        <div class="mini-label">CURRENTLY</div>
+        <div class="pulse"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div><strong>Making more noise.</strong><p>New music appears here as soon as it escapes the DAW.</p></div>
+      </div>
+      <div class="links-card">
+        <span class="mini-label">MORE BLUEBERRY</span>
+        <a href="https://blueberryfruitsy.com/">blueberryfruitsy.com <b>↗</b></a>
+        <a href="https://github.com/BlueberryF11">github.com/BlueberryF11 <b>↗</b></a>
+      </div>
+    </section>
+
+    <footer>
+      <span>© <span id="year"></span> BLUEBERRY FRUITSY</span>
+      <span>BUILT WITH HTML / CSS / JS</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
